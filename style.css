@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+a:hover,
+a:focus {
+  color: aqua;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: black;
+}
+
+.main-container {
+  color: white;
+}
+
+.restaurant-picture {
+  width: 150px;
+  height: 175px;
+  border-radius: 15px;
+}
+
+.restaurant-item {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em auto;
+  padding: 0.5em;
+  background-color: black;
+  color: white;
+}
+
+.top,
+.middle,
+.bottom,
+.item-sub-right {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  margin: 0.5em 0;
+}
+
+.top {
+  margin-top: 1em;
+}
+
+.name {
+  margin-left: 1.7em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.top {
+  justify-content: space-between;
+}
+
+.middle {
+  gap: 0.25em;
+}
+
+.restaurants-p {
+  font-size: 1.5rem;
+  padding: 0.75em;
+}
+
+.header-two {
+  border-bottom: 2px solid antiquewhite;
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chevron-down {
+  margin-left: auto;
+  display: none;
+  margin-right: 2em;
+  padding-top: 1em;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  font-size: 1.25rem;
+}
+
+.calendar {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em auto;
+}
+
+.top-calendar,
+.middle-calendar,
+.more-people {
+  margin: 1em auto;
+}
+
+.calendar-date {
+  height: 3rem;
+  width: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.date-active {
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.more-people-link {
+  color: orange;
+  text-decoration: none;
+}
+
+.more-people-link:hover,
+.more-people-link:focus {
+  color: blue;
+}
+
+.header-three {
+  display: flex;
+  font-size: 1.25rem;
+  gap: 1em;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 1em;
+  border-bottom: 2px solid antiquewhite;
+}
+
+.time-block-container {
+  display: flex;
+  margin: 1em;
+}
+
+.time-block-button {
+  height: 4rem;
+  width: 7rem;
+  margin: 0.5em;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.time-block-active {
+  background-color: orange;
+}
+
+.reserve {
+  margin: 4em auto;
+  display: block;
+  height: 3rem;
+  width: 50%;
+  background-color: orange;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-height: 960px) {
+  .footer {
+    position: static;
+    margin-top: 4rem;
+  }
+  .calendar-date {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    position: static;
+    margin-top: 4rem;
+  }
+  .calendar-date {
+    height: 2rem;
+    width: 2rem;
+  }
+}
