@@ -147,7 +147,8 @@ body {
 
 .time-block-container {
   display: flex;
-  margin: 1em auto;
+  margin: 1em;
+  justify-content: center;
 }
 
 .time-block-button {
